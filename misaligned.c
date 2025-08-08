@@ -24,6 +24,7 @@ int testPrintColorMap() {
     assert(colorIndexToPairNumber(0, 0) == 1);
     assert(colorIndexToPairNumber(0, 1) == 2);
     assert(colorIndexToPairNumber(1, 0) == 6);
+    assert(colorIndexToPairNumber(4, 4) == 25);
     printf("All is well (maybe!)\n");
     return 0;
 }
