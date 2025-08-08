@@ -29,6 +29,7 @@ char* report(struct SensorReadings (*sensorReader)()) {
     char* weather = (char*)malloc(bufsize);
     if (!weather) return NULL;
     struct SensorReadings readings = sensorReader();
+   // struct SensorReadings sensor = sensorStub();
     const char* weatherStr = "Sunny Day";
     if (readings.temperatureInC > 25) {
         if (readings.precipitation >= 20 && readings.precipitation < 60) {
